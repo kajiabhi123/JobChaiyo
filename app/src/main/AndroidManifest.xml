@@ -12,18 +12,20 @@
         <activity
             android:name=".Activities.NavigationDrawerActivity"
             android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".Activities.SplashActivity"  android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".Activities.ServiceActivityFragment" />
-        <activity android:name=".Activities.HomeActivityFragment"></activity>
+        <activity android:name=".Activities.HomeActivityFragment" />
+        <activity android:name=".Activities.CompanyRegisterActivity" />
+        <activity android:name=".Activities.PostJobFragementActivity" />
     </application>
 
 </manifest>

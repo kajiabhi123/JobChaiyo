@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.designmodal.jobchaiyo.Fragments.HomeTopFragment;
+import com.example.designmodal.jobchaiyo.Fragments.PostJobLoginFragment;
 import com.example.designmodal.jobchaiyo.Fragments.ServiceFragment;
 import com.example.designmodal.jobchaiyo.R;
 
@@ -92,6 +93,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.nav_jobs) {
 
         } else if (id == R.id.nav_post_jobs) {
+            getFragmentManager().beginTransaction().replace(R.id.container,new PostJobLoginFragment()).commit();
 
         } else if (id == R.id.nav_services)
         {
